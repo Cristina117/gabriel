@@ -1,2 +1,0 @@
-# gabriel
-tarefa do colégio
