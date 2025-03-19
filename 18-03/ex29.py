@@ -30,6 +30,8 @@ def cadastro_pessoa(cadastros):
                     ver_cadastros(cadastros)
                 elif opção == "3":
                     print("obrigada por utilizar nosso sistema!")
+                if _name_=="main":
+                    main()
                     
             #comentario?
         
