@@ -3,12 +3,12 @@ def exibir_menu():
     print("1 - Novo cadastro")
     print("2 - login")
     print("3 - sair")
-    print(_______________________________)
+    print("_______________________________")
 def cadastro_pessoa(cadastros):
-    nome=input("nome:")
-    idade=input("idade:")
-    turma=input("turma:")
-    curso=input("curso:")
+    nome = input("nome:")
+    idade = input("idade:")
+    turma = input("turma:")
+    curso = input("curso:")
     cadastros.append({"nome":nome,"idade":idade,"turma":turma,"curso":curso})
     print("cadastro realizado com sucesso!")
     def ver_cadastros(cadastros):
@@ -17,32 +17,30 @@ def cadastro_pessoa(cadastros):
         else:
             print("/n---------- LISTA DE CADASTROS----------")
         for i, pessoa in  enumerate (cadastros, 1):
-            print (f"{i} . nome: {pessoa['nome']}, idade:
-            {pessoa['idade']}, turma: {pessoa['turma']}, curso: {pessoa['curso']}")
+            print (f"{i} . nome: {pessoa['nome']}, idade:{pessoa['idade']}, turma: {pessoa['turma']}, curso: {pessoa['curso']}")
         def main():
             cadastros = []
-            while true:
+            while True:
                 exibir_menu()
-                opção = input("Escolha uma opção:")
-                if opção == "1":
+                opcao = input("Escolha uma opcao:")
+                if opcao == "1":
                     cadastrar_pessoa (cadastros)
-                elif opção == "2":
+                elif opcao == "2":
                     ver_cadastros(cadastros)
-                elif opção == "3":
+                elif opcao == "3":
                     print("obrigada por utilizar nosso sistema!")
-if _name_=="main":
-                    main()
+
                     
-        import json
+import json
 
 ARQUIVO_CADASTROS = "cadastros.json"
 
 def exibir_menu():
-    print("================ MENU CADASTRO ================")
+    print("_____________ MENU CADASTRO ____________")
     print("1. Cadastrar pessoa")
     print("2. Ver cadastros")
     print("3. Sair")
-    print("==============================================")
+    print("___________________________________________")
 
 def salvar_cadastros(cadastros):
     with open(ARQUIVO_CADASTROS, "w", encoding="utf-8") as arquivo:
@@ -72,13 +70,13 @@ def ver_cadastros(cadastros):
         print("\n================ LISTA DE CADASTROS =================")
         for pessoa in cadastros:
             print(f"Nome: {pessoa['nome']}, Idade: {pessoa['idade']}, Turma: {pessoa['turma']}, Curso: {pessoa['curso']}")
-        input("\nPressione Enter para voltar ao menu...")
+            input("\nPressione Enter para voltar ao menu...")
 
 def main():
-    cadastros = carregar_cadastros()
+    cadastros = carregar_cadastros() # type: ignore
     while True:
         exibir_menu()
-        opcao = input("Escolha uma opção: ")
+        opcao = input("Escolha uma opcao: ")
         if opcao == "1":
             cadastrar_pessoa(cadastros)
         elif opcao == "2":
@@ -87,9 +85,7 @@ def main():
             print("Obrigado por utilizar o sistema de cadastro!")
             break
         else:
-            print("Opção inválida! Tente novamente.")
+            print("Opcao invalida! Tente novamente.")
 
 if __name__ == "__main__":
     main()
-
-        
