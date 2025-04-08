@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(79, 180, 248);
+    color: rgb(182, 38, 50);
+    transition: 5s;
+    transform: scale(1.0);
+    position: relative;
+    font-style: italic;
+}
+body::after{
+    color: brown;
+}
+h1:hover{
+    box-shadow: 100px 0px 150px rgb(221, 243, 18); 
+    background:radial-gradient(rgb(30, 138, 87),rgb(31, 188, 228));
+    transform: scale(0.7);
+    transition: 1s;
+    padding: 5px 100px 5px 10px;
+    margin-top: 0px;
+    text-align: center;
+
+  }
+  p:hover{ 
+    box-shadow: 100px 0px 150px rgb(183, 238, 30); 
+    background:radial-gradient(rgb(15, 137, 146),rgb(8, 158, 138));
+    transform: scale(0.7);
+    transition: 1s;
+    padding: 5px 100px 5px 10px;
+    margin-top: 0px;
+    text-align: center;
+
+  }
