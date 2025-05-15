@@ -4,4 +4,16 @@ function adicionarTarefa(){
 
 }
 if (textoTarefa==="")return;
-// paramos na linha 71//
+
+ const li = document.createElement('li');
+    li.textContent = textoTarefa;
+
+    const botaoRemover = document.createElement('button');
+    botaoRemover.textContent = 'Remover';
+    botaoRemover.onclick = () => li.remove();
+
+    li.appendChild(botaoRemover);
+    document.getElementById('lista-tarefas').appendChild(li);
+
+    input.value = '';
+}
