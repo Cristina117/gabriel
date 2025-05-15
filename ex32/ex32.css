@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(255, 203, 136);
+    background-color: rgb(0, 0, 0);
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -7,10 +7,10 @@ body {
 }
 
 .caixinha {
-    background-color: rgb(252, 249, 225);
-    padding: 20px 30px;
+    background-color: rgb(251, 251, 253);
+    padding: 30px 40px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgb(55, 26, 172);
+    box-shadow: 0 0 30px rgb(47, 2, 248);
     width: 300px;
 }
 
@@ -33,15 +33,15 @@ ul {
 
 li {
     padding: 10px;
-    background-color: aliceblue;
+    background-color: rgb(228, 172, 245);
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
 }
 
 li button {
-    background-color: red;
-    color: aliceblue;
+    background-color: rgb(228, 174, 255);
+    color: rgba(234, 228, 235, 0.863);
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
